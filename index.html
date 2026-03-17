@@ -1,136 +1,153 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <title>Dolly Portfolio</title>
-
-  <!-- Devicon -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-
-  <link rel="stylesheet" href="./css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dolly | Problem Solving Developer</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-
-  <nav class="nav">
-    <div class="nav-logo">Dolly</div>
-    <div class="nav-menu">
-      <a href="#projects">Projects</a>
-      <a href="#tech">Tech</a>
-      <a href="#algorithm">Algorithm</a>
-      <a href="#experience">Experience</a>
-      <a href="#github">GitHub</a>
-    </div>
-  </nav>
-
-  <div class="container">
-
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-left">
-      <h1>Build with Dolly</h1>
-      <p>Problem Solving Developer</p>
-
-      <div class="hero-links">
-        <a href="https://github.com/chodonghee-hub"><button>GitHub</button></a>
-        <a href="#"><button>Baekjoon</button></a>
-        <span>donghee2100@gmail.com</span>
-      </div>
-    </div>
-
-    <div class="hero-right">
-      <div class="hero-profile">
-        <img src="https://github.com/chodonghee-hub.png">
-      </div>
-
-      <div class="hero-badge">
-        <img src="https://mazassumnida.wtf/api/v2/generate_badge?boj=YOUR_ID">
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section id="projects" class="projects">
-    <h2>Projects</h2>
-
-    <div class="projects-grid">
-
-      <div class="projects-card">
-        <div class="projects-img">
-          <img src="https://via.placeholder.com/400x200">
+    <nav class="nav-bar">
+        <div class="nav-container">
+            <div class="nav-logo">Dolly</div>
+            <ul class="nav-links">
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#tech-stack">Tech Stack</a></li>
+                <li><a href="#algorithm">Algorithm</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#github">GitHub</a></li>
+            </ul>
         </div>
+    </nav>
 
-        <div class="projects-content">
-          <h3>Algorithm Tracker</h3>
-          <p>백준 문제 풀이 기록 플랫폼</p>
+    <main class="main-wrapper">
+        <section class="hero-container">
+            <div class="hero-info">
+                <h1 class="hero-title">Build with Dolly</h1>
+                <p class="hero-role">Problem Solving Developer</p>
+                <p class="hero-tags">Algorithm · Web Development · Product Thinking</p>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-badge">
+                    <img src="https://static.solved.ac/tier_small/11.svg" alt="Gold" class="hero-tier-icon">
+                    <div class="hero-badge-txt">
+                        <strong>BOJ Gold Tier</strong>
+                        <span>Solved.ac</span>
+                    </div>
+                </div>
+                <div class="hero-profile">Profile</div>
+            </div>
+        </section>
 
-          <div class="projects-tags">
-            <span>JavaScript</span>
-            <span>REST API</span>
-          </div>
-        </div>
+        <section class="about-section">
+            <h2 class="about-header">About Me</h2>
+            <div class="about-card">
+                <p>Problem solving focused developer with experience in algorithms and web development.<br>
+                Interested in building practical services and improving user experience.</p>
+            </div>
+        </section>
 
-        <div class="projects-overlay">
-          <button><i class="devicon-github-original"></i> GitHub</button>
-          <button>Demo</button>
-        </div>
-      </div>
+        <section id="projects" class="proj-section">
+            <h2 class="proj-header">Projects</h2>
+            <div class="proj-grid">
+                <div class="proj-item">
+                    <div class="proj-thumb"></div>
+                    <div class="proj-details">
+                        <h3>Project Title</h3>
+                        <p>Short description</p>
+                    </div>
+                </div>
+                <div class="proj-item">
+                    <div class="proj-thumb"></div>
+                    <div class="proj-details">
+                        <h3>Project Title</h3>
+                        <p>Short description</p>
+                    </div>
+                </div>
+                <div class="proj-item">
+                    <div class="proj-thumb"></div>
+                    <div class="proj-details">
+                        <h3>Project Title</h3>
+                        <p>Short description</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    </div>
-  </section>
+        <section id="tech-stack" class="tech-section">
+            <h2 class="tech-header">Tech Stack</h2>
+            <div class="tech-container">
+                <div class="tech-icon"><img src="https://cdn.simpleicons.org/javascript" alt="JS"></div>
+                <div class="tech-icon"><img src="https://cdn.simpleicons.org/python" alt="PY"></div>
+                <div class="tech-icon"><img src="https://cdn.simpleicons.org/react" alt="React"></div>
+                <div class="tech-icon"><img src="https://cdn.simpleicons.org/html5" alt="HTML"></div>
+                <div class="tech-icon"><img src="https://cdn.simpleicons.org/css3/#1572B6" alt="CSS"></div>
+                <div class="tech-icon"><img src="https://cdn.simpleicons.org/git" alt="Git"></div>
+            </div>
+        </section>
 
-  <!-- TECH STACK -->
-  <section id="tech" class="tech">
-    <h2>Tech Stack</h2>
+        <section id="algorithm" class="algo-section">
+            <h2 class="algo-header">Algorithm</h2>
+            <div class="algo-grid">
+                <div class="algo-stat-card">
+                    <span class="algo-label">Baekjoon Tier</span>
+                    <div class="algo-value">Gold I</div>
+                </div>
+                <div class="algo-stat-card">
+                    <span class="algo-label">Solved Problems</span>
+                    <div class="algo-value">850+</div>
+                </div>
+                <div class="algo-stat-card">
+                    <span class="algo-label">Main Language</span>
+                    <div class="algo-value">C++ / Python</div>
+                </div>
+            </div>
+        </section>
 
-    <div class="tech-icons">
-      <div class="tech-icon"><i class="devicon-javascript-plain colored"></i></div>
-      <div class="tech-icon"><i class="devicon-python-plain colored"></i></div>
-      <div class="tech-icon"><i class="devicon-c-plain colored"></i></div>
-      <div class="tech-icon"><i class="devicon-react-original colored"></i></div>
-      <div class="tech-icon"><i class="devicon-html5-plain colored"></i></div>
-      <div class="tech-icon"><i class="devicon-css3-plain colored"></i></div>
-      <div class="tech-icon"><i class="devicon-git-plain colored"></i></div>
-      <div class="tech-icon"><i class="devicon-figma-plain colored"></i></div>
-    </div>
-  </section>
+        <section class="exp-section">
+            <h2 class="exp-header">Experience</h2>
+            <div class="exp-card">
+                <ul class="exp-list">
+                    <li class="exp-item">LG U+ 유레카 SW 프론트엔드 과정</li>
+                    <li class="exp-item">Deep Learning Internship</li>
+                    <li class="exp-item">Programming Competition Award</li>
+                </ul>
+            </div>
+        </section>
 
-  <!-- ALGORITHM -->
-  <section id="algorithm" class="algorithm">
-    <h2>Algorithm</h2>
+        <section id="achievements" class="award-section">
+            <h2 class="award-header">Achievements</h2>
+            <div class="award-grid">
+                <div class="award-card">
+                    <div class="award-emoji">🏆</div>
+                    <div class="award-info">
+                        <strong>Programming Competition Award</strong>
+                        <p>알고리즘 대회 수상</p>
+                    </div>
+                </div>
+                <div class="award-card">
+                    <div class="award-emoji">🎓</div>
+                    <div class="award-info">
+                        <strong>Scholarship</strong>
+                        <p>성적 우수 장학금</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <div class="algorithm-grid">
-      <div class="algorithm-card">Gold</div>
-      <div class="algorithm-card">200+</div>
-      <div class="algorithm-card">JavaScript</div>
-    </div>
-  </section>
-
-  <!-- EXPERIENCE -->
-  <section id="experience" class="experience">
-    <h2>Experience</h2>
-
-    <div class="experience-box">
-      <p>LG U+ 유레카 SW 프론트엔드 과정</p>
-      <p>Deep Learning Internship</p>
-      <p>Programming Competition Award</p>
-    </div>
-  </section>
-
-  <!-- GITHUB -->
-  <section id="github" class="github">
-    <h2>GitHub</h2>
-
-    <div class="github-grid">
-      <div class="github-card">Repositories 20+</div>
-      <div class="github-card">Followers 10+</div>
-
-      <div class="github-card">
-        <img src="https://github-readme-activity-graph.vercel.app/graph?username=YOUR_ID&theme=github-dark">
-      </div>
-    </div>
-  </section>
-
-  </div>
-
+        <section id="github" class="git-section">
+            <h2 class="git-header">GitHub</h2>
+            <div class="git-grid">
+                <div class="git-stat">Repositories<br><span class="git-value">24</span></div>
+                <div class="git-stat">Followers<br><span class="git-value">128</span></div>
+                <div class="git-grass-box">
+                    <div class="git-grass-grid">
+                        <div class="grass l3"></div><div class="grass l1"></div><div class="grass l4"></div><div class="grass l2"></div><div class="grass l3"></div><div class="grass l1"></div><div class="grass l4"></div>
+                        <div class="grass l2"></div><div class="grass l3"></div><div class="grass l1"></div><div class="grass l4"></div><div class="grass l2"></div><div class="grass l3"></div><div class="grass l1"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
