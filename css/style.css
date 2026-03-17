@@ -1,0 +1,185 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: radial-gradient(circle at top, #111827, #0f1117);
+  color: white;
+}
+
+/* NAV */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+}
+
+.nav-menu a {
+  margin-left: 20px;
+  color: #aaa;
+  text-decoration: none;
+}
+
+/* CONTAINER */
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(145deg, #151922, #1a1f2b);
+  padding: 40px;
+  border-radius: 16px;
+}
+
+.hero-profile {
+  width: 100px;
+  height: 100px;
+}
+
+.hero-profile img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.hero-badge img {
+  width: 120px;
+}
+
+/* SECTION */
+section {
+  margin-top: 100px;
+}
+
+/* PROJECTS */
+.projects-grid {
+  display: flex;
+  gap: 24px;
+}
+
+.projects-card {
+  position: relative;
+  flex: 1;
+  background: linear-gradient(145deg, #151922, #1a1f2b);
+  border-radius: 16px;
+  padding: 20px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.projects-card:hover {
+  transform: translateY(-6px);
+}
+
+.projects-img img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.projects-tags span {
+  background: #222;
+  padding: 4px 10px;
+  border-radius: 6px;
+  margin-right: 6px;
+  font-size: 12px;
+}
+
+.projects-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.7);
+  padding: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.3s;
+}
+
+.projects-card:hover .projects-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* TECH */
+.tech-icons {
+  display: flex;
+  gap: 20px;
+  background: #151922;
+  padding: 20px;
+  border-radius: 16px;
+}
+
+.tech-icon {
+  width: 60px;
+  height: 60px;
+  background: #1f2430;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.tech-icon i {
+  font-size: 28px;
+}
+
+.tech-icon:hover {
+  transform: scale(1.1);
+  background: #4c7cff;
+}
+
+/* ALGORITHM */
+.algorithm-grid {
+  display: flex;
+  gap: 24px;
+}
+
+.algorithm-card {
+  flex: 1;
+  background: #151922;
+  padding: 20px;
+  border-radius: 16px;
+  text-align: center;
+}
+
+/* EXPERIENCE */
+.experience-box {
+  background: #151922;
+  padding: 20px;
+  border-radius: 16px;
+}
+
+.experience-box p {
+  position: relative;
+  padding-left: 20px;
+}
+
+.experience-box p::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 8px;
+  height: 8px;
+  background: #4c7cff;
+  border-radius: 50%;
+}
+
+/* GITHUB */
+.github-grid {
+  display: flex;
+  gap: 24px;
+}
+
+.github-card {
+  flex: 1;
+  background: #151922;
+  padding: 20px;
+  border-radius: 16px;
+}
