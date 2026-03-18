@@ -133,6 +133,7 @@ body {
 .hero-visual { 
     display: flex; 
     align-items: center; 
+    gap: 20px;
     position: relative;
 }
 
@@ -145,14 +146,14 @@ body {
     align-items: center; 
     gap: 12px; 
     box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-    z-index: 2; 
+    z-index: 1; 
 }
 
 .hero-tier-icon { width: 32px; height: 32px; }
 .hero-badge-txt strong { display: block; font-size: 15px; color: #fff; }
 .hero-badge-txt span { font-size: 12px; color: var(--text-secondary); }
 
-.hero-profile { 
+.hero-profile img{ 
     width: 130px; 
     height: 130px; 
     background: #30363d; 
@@ -164,6 +165,13 @@ body {
     border: 6px solid var(--bg); 
     font-weight: bold; 
     color: var(--text-secondary);
+}
+
+.about-message {
+    color: var(--blue); 
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 4px;
 }
 
 /* 5. Common Section Style */
