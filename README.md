@@ -2,20 +2,20 @@
 
 📌 CORP : KOSTA <br />
 📌 DURATION : 2026.03.14 ~ 2026.03.19
-<br>
 🌐 <a href="https://about-me-beta-blue.vercel.app/">Live Demo 바로가기</a>
+
+
 <br>
+<h2>✔ 개요</h2>
 
-<h2>개요</h2>
-
-> **\_**자기소개 및 이력을 정리하기 위한 포트폴리오 페이지**\_**
+> _자기소개 및 이력을 정리하기 위한 개인 포트폴리오 페이지 제작_
 
 <div align="center">
   <img width="851" height="511" alt="image" src="https://github.com/user-attachments/assets/f4d9a1cd-0b7a-4e0a-8488-16ca2bfe4f2c" />
 </div>
 <br>
 
-<h2>화면 구성<h2>
+<h2>✔ 화면 구성<h2>
 
 ```Plaintext
           -------------------------
@@ -41,13 +41,12 @@
 
 <br>
 
-<h2>페이지 핵심 기능</h2>
+<h2>✔ 페이지 핵심 기능</h2>
 
 > **핵심 프로젝트 요약 및 시각화**
 
 <div align='center'>
-<img width="622" height="793" alt="image" src="https://github.co
-m/user-attachments/assets/2eb22845-ba85-4ccb-b198-c141733a9a23" />
+<img width="632" height="800" alt="image" src="https://github.com/user-attachments/assets/6f9a9904-9e39-4d42-98a1-20d9ea479e16" />
 </div>
 <br>
 
