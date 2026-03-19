@@ -27,8 +27,6 @@
 
 html {
   scroll-behavior: smooth;
-  /* 내비게이션 바 높이(70px)만큼 위쪽에 여백을 둡니다. */
-  /* 여유 있게 80px~90px 정도를 주면 제목이 더 잘 보입니다. */
   scroll-padding-top: 100px;
 }
 
@@ -258,11 +256,21 @@ section {
   border-color: var(--blue);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
 }
+
+/* 프로젝트 썸네일 추가 작업 */
 .proj-thumb {
-  height: 180px;
-  background: #21262d;
-  border-bottom: 1px solid var(--border);
+    display: flex;
+    flex-direction: col;
+    justify-content: center;
+    height: 180px;
+    background: #21262d;
+    border-bottom: 1px solid var(--border);
 }
+
+.proj-thumb-img {
+    object-fit: cover;    
+}
+
 .proj-details {
   padding: 25px;
 }
