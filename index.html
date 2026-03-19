@@ -17,8 +17,9 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#tech-stack">Tech Stack</a></li>
                 <li><a href="#algorithm">Algorithm</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#achievements">Achievements</a></li>
-                <li><a href="#github">GitHub</a></li>
+                <li><a href="https://github.com/chodonghee-hub">GitHub</a></li>
             </ul>
         </div>
     </nav>
@@ -26,7 +27,7 @@
     <main class="main-wrapper">
         <section id="heros" class="hero-container">
             <div class="hero-info">
-                <h1 class="hero-title">Build with <br>DONG HEE</h1>
+                <h1 class="hero-title">Welcome! <br>I'm <br>DONG HEE</h1>
                 <p class="hero-role">Problem Solving Developer</p>
                 <p class="hero-tags">Algorithm · Web Development · Product Thinking</p>
             </div>
@@ -60,28 +61,8 @@
         <!-- Todo -->
         <section id="projects" class="proj-section">
             <h2 class="proj-header">Projects</h2>
-            <div class="proj-grid">
-                <div class="proj-item">
-                    <div class="proj-thumb"></div>
-                    <div class="proj-details">
-                        <h3>Project Title</h3>
-                        <p>Short description</p>
-                    </div>
-                </div>
-                <div class="proj-item">
-                    <div class="proj-thumb"></div>
-                    <div class="proj-details">
-                        <h3>Project Title</h3>
-                        <p>Short description</p>
-                    </div>
-                </div>
-                <div class="proj-item">
-                    <div class="proj-thumb"></div>
-                    <div class="proj-details">
-                        <h3>Project Title</h3>
-                        <p>Short description</p>
-                    </div>
-                </div>
+            <div id="project-grid" class="proj-grid">
+                <script src="./js/projects.js"></script>
             </div>
         </section>
 
@@ -92,7 +73,9 @@
                 <div class="tech-icon"><img src="https://cdn.simpleicons.org/python" alt="PY"></div>
                 <div class="tech-icon"><img src="https://cdn.simpleicons.org/react" alt="React"></div>
                 <div class="tech-icon"><img src="https://cdn.simpleicons.org/html5" alt="HTML"></div>
-                <div class="tech-icon"><img src="https://cdn.simpleicons.org/css3/#1572B6" alt="CSS"></div>
+                <div class="tech-icon"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="CSS"></div>
+                <div class="tech-icon"><img src="https://cdn.simpleicons.org/cplusplus" alt="C++"></div>
+                <div class="tech-icon"><img src="https://cdn.simpleicons.org/figma" alt="Figma"></div>
                 <div class="tech-icon"><img src="https://cdn.simpleicons.org/git" alt="Git"></div>
             </div>
         </section>
@@ -106,7 +89,7 @@
                 </div>
                 <div class="algo-stat-card">
                     <span class="algo-label">Solved Problems</span>
-                    <div class="algo-value">850+</div>
+                    <div class="algo-value">400+</div>
                 </div>
                 <div class="algo-stat-card">
                     <span class="algo-label">Main Language</span>
@@ -116,7 +99,7 @@
         </section>
 
         <section class="exp-section">
-            <h2 class="exp-header">Experience</h2>
+            <h2 id="experience" class="exp-header">Experience</h2>
             <div class="exp-card">
                 <ul class="exp-list">
                     <li class="exp-item">KOSTA 한국소프트웨어 기술진흥협회 - NodeJS Web Developer [2026.02 ~ ]</li>
@@ -135,40 +118,37 @@
             <h2 class="award-header">Achievements</h2>
             <div class="award-grid">
                 <div class="award-card">
-                    <div class="award-emoji">🏆</div>
-                    <div class="award-info">
-                        <strong>프로그래밍 대회 수상</strong>
+                    <div>
+                        <div style="margin-bottom: 5px; display: flex; flex-direction: row; gap: 10px; align-items: center;">
+                            <div class="award-emoji">🏆</div>
+                            <div class="award-info">
+                                <strong>프로그래밍 대회 수상</strong>
+                            </div>
+                        </div>
                         <ul class="exp-list">
-                            <li class="exp-item"></li>
+                            <li class="exp-item">[Python] 전국단위 대회 🥇🥈 (2022. 12) <br>DL기반 CNC 밀링 머신 이상소음 패턴 감지시스템 개발 </li>
+                            <li class="exp-item">[C++] 교내대회 🥈 (2017. 12) <br>  100x100 LED큐브 개발 </li>
+                            <li class="exp-item">[Python] 교내대회 🥉 (2016. 12) <br>  Finch Robot 제어를 활용한 로봇 청소기 알고리즘 구현 </li>
                         </ul>
                     </div>
                 </div>
                 <div class="award-card">
-                    <div class="award-emoji">🎓</div>
-                    <div class="award-info">
-                        <strong>성적 우수 장학금</strong>
-                        <p>-</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="github" class="git-section">
-            <h2 class="git-header">GitHub</h2>
-            <div class="git-grid">
-                <div class="git-stat">Repositories<br><span class="git-value">24</span></div>
-                <div class="git-stat">Followers<br><span class="git-value">128</span></div>
-                <div class="git-grass-box">
-                    <div class="git-grass-grid">
-                        <div class="grass l3"></div><div class="grass l1"></div><div class="grass l4"></div><div class="grass l2"></div><div class="grass l3"></div><div class="grass l1"></div><div class="grass l4"></div>
-                        <div class="grass l2"></div><div class="grass l3"></div><div class="grass l1"></div><div class="grass l4"></div><div class="grass l2"></div><div class="grass l3"></div><div class="grass l1"></div>
+                    <div style="display: flex; flex-direction: column; align-self: flex-start;">
+                        <div style="margin-bottom: 5px; display: flex; flex-direction: row; gap: 10px; align-items: center;">
+                            <div class="award-emoji">🎓</div>
+                            <div class="award-info">
+                                <strong>성적 우수 장학금</strong>
+                            </div>
+                        </div>
+                        <ul class="exp-list">
+                            <li class="exp-item">수석 🥇 (2016)</li>
+                            <li class="exp-item">차차석 🥉 (2017)</li>
+                            <li class="exp-item">차차석 🥉 (2022)</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    
-    <!-- 백준 티어 로드 -->
-    <!-- <script src="./js/boj_load.js"></script>  -->
 </body>
 </html>
