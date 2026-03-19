@@ -152,55 +152,55 @@ body {
 }
 
 .hero-badge {
-  background: #21262d;
-  border: 1px solid var(--border);
-  padding: 16px 24px;
-  border-radius: 16px;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-  z-index: 1;
+    background: #21262d;
+    border: 1px solid var(--border);
+    padding: 16px 24px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    z-index: 1;
 }
 
 .hero-tier-icon {
-  width: 32px;
-  height: 32px;
+    width: 32px;
+    height: 32px;
 }
 .hero-badge-txt strong {
-  display: block;
-  font-size: 15px;
-  color: #fff;
+    display: block;
+    font-size: 15px;
+    color: #fff;
 }
 .hero-badge-txt span {
-  font-size: 12px;
-  color: var(--text-secondary);
+    font-size: 12px;
+    color: var(--text-secondary);
 }
 
 .hero-profile img {
-  width: 130px;
-  height: 130px;
-  background: #30363d;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: -40px;
-  border: 6px solid var(--bg);
-  font-weight: bold;
-  color: var(--text-secondary);
+    width: 130px;
+    height: 130px;
+    background: #30363d;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -40px;
+    border: 6px solid var(--bg);
+    font-weight: bold;
+    color: var(--text-secondary);
 }
 
 .about-message {
-  color: var(--blue);
-  font-size: 22px;
-  font-weight: bold;
-  margin-bottom: 4px;
+    color: var(--blue);
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 4px;
 }
 
 /* 5. Common Section Style */
 section {
-  margin-top: 100px;
+    margin-top: 100px;
 }
 
 .about-header,
@@ -208,8 +208,7 @@ section {
 .tech-header,
 .algo-header,
 .exp-header,
-.award-header,
-.git-header {
+.award-header{
   font-size: clamp(22px, 4vw, 28px);
   margin-bottom: 30px;
   border-left: 5px solid var(--blue);
@@ -223,9 +222,7 @@ section {
 .tech-container,
 .algo-stat-card,
 .exp-card,
-.award-card,
-.git-stat,
-.git-grass-box {
+.award-card {
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: 20px;
@@ -234,8 +231,7 @@ section {
 
 /* Multi-column Grids */
 .proj-grid,
-.algo-grid,
-.git-grid {
+.algo-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 24px;
@@ -305,12 +301,10 @@ section {
   filter: grayscale(0%);
 }
 
-.algo-stat-card,
-.git-stat {
+.algo-stat-card {
   padding: 30px;
 }
-.algo-value,
-.git-value {
+.algo-value{
   font-size: 40px;
   font-weight: 900;
   color: var(--blue);
@@ -335,6 +329,7 @@ section {
   margin-bottom: 18px;
   position: relative;
   font-size: 17px;
+  transition: color 0.3s ease;
 }
 .exp-item::before {
   content: "●";
@@ -365,54 +360,24 @@ section {
   border-radius: 12px;
 }
 
-.git-grass-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-}
-.git-grass-grid {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 6px;
-}
-.grass {
-  width: 16px;
-  height: 16px;
-  border-radius: 3px;
-  background: #161b22;
-}
-.l1 {
-  background: #0e4429;
-}
-.l2 {
-  background: #006d32;
-}
-.l3 {
-  background: #26a641;
-}
-.l4 {
-  background: #39d353;
-}
-
 /* 8. Responsive Media Queries */
 @media (max-width: 768px) {
-  .nav-links {
-    display: none;
-  } /* Hide menu on mobile */
-  .hero-container {
-    padding: 45px 30px;
-    text-align: center;
-    justify-content: center;
-  }
-  .hero-visual {
-    margin-left: 30px;
-    margin-top: 20px;
-  }
-  .award-grid {
-    grid-template-columns: 1fr;
-  }
-  .main-wrapper {
-    margin-top: 100px;
-  }
+    .nav-links {
+        display: none;
+    } /* Hide menu on mobile */
+    .hero-container {
+        padding: 45px 30px;
+        text-align: center;
+        justify-content: center;
+    }
+    .hero-visual {
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+    .award-grid {
+        grid-template-columns: 1fr;
+    }
+    .main-wrapper {
+        margin-top: 100px;
+    }
 }
