@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dolly | Problem Solving Developer</title>
+    <title>DongHee | Problem Solving Developer</title>
+    <link rel="icon" href="./img/logo.svg">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <nav class="nav-bar">
         <div class="nav-container">
-            <div class="nav-logo">Dolly</div>
+            <a href="#heros">
+                <img class="nav-logo-icon" src="./img/logo.svg" alt="logo">
+            </a>
             <ul class="nav-links">
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#tech-stack">Tech Stack</a></li>
@@ -21,32 +24,40 @@
     </nav>
 
     <main class="main-wrapper">
-        <section class="hero-container">
+        <section id="heros" class="hero-container">
             <div class="hero-info">
-                <h1 class="hero-title">Build with Dolly</h1>
+                <h1 class="hero-title">Build with <br>DONG HEE</h1>
                 <p class="hero-role">Problem Solving Developer</p>
                 <p class="hero-tags">Algorithm · Web Development · Product Thinking</p>
             </div>
             <div class="hero-visual">
-                <div class="hero-badge">
-                    <img src="https://static.solved.ac/tier_small/11.svg" alt="Gold" class="hero-tier-icon">
-                    <div class="hero-badge-txt">
-                        <strong>BOJ Gold Tier</strong>
-                        <span>Solved.ac</span>
+                <a href="https://solved.ac/profile/timandsunny" id="hero-boj-link" target="_blank" style="text-decoration: none;">
+                    <div class="hero-badge">
+                        <img src="https://d2gd6pc034wcta.cloudfront.net/tier/12.svg" alt="Tier" id="hero-tier-img" class="hero-tier-icon">
+                        <div class="hero-badge-txt">
+                            <strong id="hero-tier-name">GOLD IV</strong>
+                            <span>Solved.ac</span>
+                        </div>
                     </div>
+                </a>
+                <div class="hero-profile">
+                    <img class="hero-profile-img" src="https://avatars.githubusercontent.com/u/67031025?v=4" alt="profile image">
                 </div>
-                <div class="hero-profile">Profile</div>
             </div>
         </section>
 
         <section class="about-section">
             <h2 class="about-header">About Me</h2>
             <div class="about-card">
-                <p>Problem solving focused developer with experience in algorithms and web development.<br>
-                Interested in building practical services and improving user experience.</p>
+                <p>
+                    <p class="about-message">"문제 해결의 즐거움을 서비스의 가치로 연결합니다."</p>
+                    알고리즘 기반의 논리적 사고와 프론트엔드 기술력을 겸비하고 있습니다. <br>
+                    사용자가 겪는 불편함을 기술적으로 해소하는 일에 몰입하며, 함께 성장할 수 있는 견고한 프로덕트를 지향합니다.
+                </p>
             </div>
         </section>
-
+        
+        <!-- Todo -->
         <section id="projects" class="proj-section">
             <h2 class="proj-header">Projects</h2>
             <div class="proj-grid">
@@ -91,7 +102,7 @@
             <div class="algo-grid">
                 <div class="algo-stat-card">
                     <span class="algo-label">Baekjoon Tier</span>
-                    <div class="algo-value">Gold I</div>
+                    <div class="algo-value">Gold IV</div>
                 </div>
                 <div class="algo-stat-card">
                     <span class="algo-label">Solved Problems</span>
@@ -99,7 +110,7 @@
                 </div>
                 <div class="algo-stat-card">
                     <span class="algo-label">Main Language</span>
-                    <div class="algo-value">C++ / Python</div>
+                    <div class="algo-value">JavaScript / Python</div>
                 </div>
             </div>
         </section>
@@ -108,9 +119,14 @@
             <h2 class="exp-header">Experience</h2>
             <div class="exp-card">
                 <ul class="exp-list">
-                    <li class="exp-item">LG U+ 유레카 SW 프론트엔드 과정</li>
-                    <li class="exp-item">Deep Learning Internship</li>
-                    <li class="exp-item">Programming Competition Award</li>
+                    <li class="exp-item">KOSTA 한국소프트웨어 기술진흥협회 - NodeJS Web Developer [2026.02 ~ ]</li>
+                    <li class="exp-item">LG U+ 유레카 SW 부트캠프 - Web FrontEnd [2024.06 ~ 2024.12]</li>
+                    <li class="exp-item">테라리더 / Deep Learning Based 밀링머신 이상 소음 탐지 분석 연구 [2022.06 ~ 2022.12] </li>
+                    <li class="exp-item">Python Programming 2기 튜터링 그룹 운영 [2022.09 ~ 2022.12]</li>
+                    <li class="exp-item">GDL시스템 / Deep Learning Based SAR인공위성 이미지 Denosing 모델 개발 인턴십 [2022.07 ~ 2022.09]</li>                    
+                    <li class="exp-item">Python Programming 1기 튜터링 그룹 운영 [2022.03 ~ 2022.06]</li>
+                    <li class="exp-item">링크나인시스템 / C++ Based MFC ServerSocket Programming 인턴십 [2021. 12 
+                        ~ 2022.02]</li>
                 </ul>
             </div>
         </section>
@@ -121,15 +137,17 @@
                 <div class="award-card">
                     <div class="award-emoji">🏆</div>
                     <div class="award-info">
-                        <strong>Programming Competition Award</strong>
-                        <p>알고리즘 대회 수상</p>
+                        <strong>프로그래밍 대회 수상</strong>
+                        <ul class="exp-list">
+                            <li class="exp-item"></li>
+                        </ul>
                     </div>
                 </div>
                 <div class="award-card">
                     <div class="award-emoji">🎓</div>
                     <div class="award-info">
-                        <strong>Scholarship</strong>
-                        <p>성적 우수 장학금</p>
+                        <strong>성적 우수 장학금</strong>
+                        <p>-</p>
                     </div>
                 </div>
             </div>
@@ -149,5 +167,8 @@
             </div>
         </section>
     </main>
+    
+    <!-- 백준 티어 로드 -->
+    <!-- <script src="./js/boj_load.js"></script>  -->
 </body>
 </html>
