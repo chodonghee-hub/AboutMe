@@ -344,6 +344,10 @@ section {
   font-size: 14px;
 }
 
+.exp-item:hover {
+    color: var(--blue);
+}
+
 .award-card {
   padding: 30px;
   display: flex;
