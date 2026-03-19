@@ -1,7 +1,7 @@
 # AboutMe (자기소개 포트폴리오 페이지 👋)
 
-📌 CORP : KOSTA <br />
-📌 DURATION : 2026.03.14 ~ 2026.03.19
+📌 CORP : KOSTA <br>
+📌 DURATION : 2026.03.14 ~ 2026.03.19 <br>
 🌐 <a href="https://about-me-beta-blue.vercel.app/">Live Demo 바로가기</a>
 
 
@@ -73,7 +73,7 @@
 
 <br>
 
-🧩 **Layout Guides**
+🧩 **Layout Guides ( _@Media query_ )**
 
 ```
   --max-w: 900px  <-- Desktop Max Width
@@ -98,7 +98,7 @@
 ├── css/
 │   └── style.css    # 전역 스타일 및 반응형 디자인
 ├── js/
-│   └── loadData.js  # API 데이터 바인딩 및 동적 렌더링 로직
+│   └── loadData.js  # 동적 렌더링 로직
 └── img/
     └──images        # 로고, 캐릭터 이미지 및 파란색 PNG 에셋
 ```
