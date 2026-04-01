@@ -1,0 +1,27 @@
+.exp-card {
+  padding: 40px;
+}
+
+.exp-list {
+  list-style: none;
+  padding-left: 25px;
+}
+
+.exp-item {
+  margin-bottom: 18px;
+  position: relative;
+  font-size: 17px;
+  transition: color 0.3s ease;
+}
+
+.exp-item::before {
+  content: "●";
+  color: var(--blue);
+  position: absolute;
+  left: -30px;
+  font-size: 14px;
+}
+
+.exp-item:hover {
+  color: var(--blue);
+}

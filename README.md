@@ -1,104 +1,17 @@
-# AboutMe (자기소개 포트폴리오 페이지 👋)
+# Portfolio Project Refactoring
 
-📌 CORP : KOSTA <br>
-📌 DURATION : 2026.03.14 ~ 2026.03.19 <br>
-🌐 <a href="https://about-me-beta-blue.vercel.app/">Live Demo 바로가기</a>
+## 실행 방법
+이 프로젝트는 `fetch()`로 `sections/*.html`을 불러오기 때문에 `file://`로 직접 열지 말고 로컬 서버에서 실행해야 합니다.
 
+예시:
 
-<br>
-<h2>✔ 개요</h2>
-
-> _자기소개 및 이력을 정리하기 위한 개인 포트폴리오 페이지 제작_
-
-<div align="center">
-  <img width="851" height="511" alt="image" src="https://github.com/user-attachments/assets/f4d9a1cd-0b7a-4e0a-8488-16ca2bfe4f2c" />
-</div>
-<br>
-
-<h2>✔ 화면 구성<h2>
-
-```Plaintext
-          -------------------------
-          |       NAVIGATION      |
-          |-----------------------|
-          |      PROFILE INFO     |
-          |-----------------------|
-          |        ABOUT ME       |
-          |-----------------------|
-          |        PROJECTS       |
-          |-----------------------|
-          |       TECH STACK      |
-          |-----------------------|
-          |       TECH STACK      |
-          |-----------------------|
-          |        ALGORITHM      |
-          |-----------------------|
-          |       EXPERIENCE      |
-          |-----------------------|
-          |      ACHIEVEMENTS     |
-          |-----------------------|
+```bash
+npx serve
 ```
 
-<br>
+또는 VS Code Live Server를 사용하세요.
 
-<h2>✔ 페이지 핵심 기능</h2>
-
-> **핵심 프로젝트 요약 및 시각화**
-
-<div align='center'>
-<img width="632" height="800" alt="image" src="https://github.com/user-attachments/assets/6f9a9904-9e39-4d42-98a1-20d9ea479e16" />
-</div>
-<br>
-
-> **경험 및 이력 사항 정리**
-
-<div align='center'>
-<img width="611" height="363" alt="image" src="https://github.com/user-attachments/assets/97419cc0-5427-49c1-ab99-dca662c11768" />
-</div>
-<br>
-
-<h2>⚙️ Ground Setting</h2>
-
-🎨 **Color Palette**
-
-```
-  --bg: #0d1117;
-  --card: #161b22;
-  --border: #30363d;
-  --text-primary: #f0f6fc;
-  --text-secondary: #8b949e;
-  --blue: #58a6ff;
-  --purple: #bc8cff;
-```
-
-<br>
-
-🧩 **Layout Guides ( _@Media query_ )**
-
-```
-  --max-w: 900px  <-- Desktop Max Width
-  --min-w: 320px  <-- Mobile Min Width
-  --nav-h: 70px   <-- Navbar Height
-```
-
-<br>
-<h2>🛠️ Tech Stack (사용 기술)</h2>
-
-| 분류           | 기술                           |
-| -------------- | ------------------------------ |
-| **Frontend**   | HTML5, CSS3, JavaScript (ES6+) |
-| **Deployment** | Vercel                         |
-| **Design**     | Figma                          |
-
-<br>
-<h2>📂 Project Structure</h2>
-
-```Plaintext
-├── index.html       # 메인 구조 및 레이아웃
-├── css/
-│   └── style.css    # 전역 스타일 및 반응형 디자인
-├── js/
-│   └── loadData.js  # 동적 렌더링 로직
-└── img/
-    └──images        # 로고, 캐릭터 이미지 및 파란색 PNG 에셋
-```
+## 참고
+- `assets/img/` 폴더는 현재 비어 있습니다.
+- 기존 프로젝트 이미지 파일들을 이 위치에 직접 옮겨 넣어야 화면이 정상 표시됩니다.
+- `assets/img/logo.svg`도 함께 넣어야 favicon과 네비게이션 로고가 정상 동작합니다.

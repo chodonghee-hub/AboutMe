@@ -1,0 +1,87 @@
+.hero-container {
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 60px 50px;
+  border-radius: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.hero-info {
+  flex: 1;
+  min-width: 300px;
+}
+
+.hero-title {
+  background: linear-gradient(90deg, var(--blue), var(--purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: clamp(32px, 5vw, 52px);
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.hero-role {
+  font-size: 24px;
+  margin: 15px 0;
+  font-weight: 600;
+  color: #fff;
+}
+
+.hero-tags {
+  color: var(--blue);
+  font-size: 15px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.hero-visual {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+
+.hero-link {
+  text-decoration: none;
+}
+
+.hero-badge {
+  background: #21262d;
+  border: 1px solid var(--border);
+  padding: 16px 24px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.hero-tier-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.hero-badge-txt strong {
+  display: block;
+  font-size: 15px;
+  color: #fff;
+}
+
+.hero-badge-txt span {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.hero-profile img {
+  width: 170px;
+  height: 170px;
+  background: #30363d;
+  border-radius: 50%;
+  margin-left: -40px;
+  border: 6px solid var(--bg);
+}

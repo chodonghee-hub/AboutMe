@@ -1,0 +1,11 @@
+.about-card {
+  padding: 35px;
+  font-size: 17px;
+}
+
+.about-message {
+  color: var(--blue);
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
