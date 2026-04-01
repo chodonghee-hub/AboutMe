@@ -3,13 +3,13 @@ import { PROJECT_LIST } from './data/projects-data.js';
 import { createProjectCard, startProjectCarousel } from './ui/project-card.js';
 
 function renderProjects() {
-  const grid = document.getElementById('project-grid');
-  if (!grid) return;
+  const $grid = $('#project-grid');
+  if ($grid.length === 0) return;
 
   PROJECT_LIST.forEach((project) => {
-    const card = createProjectCard(project);
-    grid.appendChild(card);
-    startProjectCarousel(card);
+    const $card = createProjectCard(project);
+    $grid.append($card);
+    startProjectCarousel($card);
   });
 }
 

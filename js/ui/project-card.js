@@ -1,13 +1,8 @@
 export function createProjectCard(project) {
-  const item = document.createElement('div');
-  item.className = 'proj-item';
-
   const images = project.imgs || (project.img ? [project.img] : []);
   const slidesHtml = images
     .map(
-      (src, i) => `
-        <img class="proj-thumb-img ${i === 0 ? 'active' : ''}" src="${src}" alt="${project.title} thumbnail" />
-      `,
+      (src, i) => `<img class="proj-thumb-img ${i === 0 ? 'active' : ''}" src="${src}" alt="${project.title} thumbnail" />`
     )
     .join('');
 
@@ -15,7 +10,7 @@ export function createProjectCard(project) {
     .map((v) => `<div class="proj-badge">${v}</div>`)
     .join('');
 
-  item.innerHTML = `
+  return $('<div>').addClass('proj-item').html(`
     <div class="proj-thumb">
       <div class="slide-wrapper">
         ${slidesHtml}
@@ -28,20 +23,18 @@ export function createProjectCard(project) {
     <div class="proj-badge-list">
       ${badges}
     </div>
-  `;
-
-  return item;
+  `);
 }
 
-export function startProjectCarousel(item) {
-  const slides = item.querySelectorAll('.proj-thumb-img');
-  if (slides.length <= 1) return;
+export function startProjectCarousel($item) {
+  const $slides = $item.find('.proj-thumb-img');
+  if ($slides.length <= 1) return;
 
   let currentIdx = 0;
 
   setInterval(() => {
-    slides[currentIdx].classList.remove('active');
-    currentIdx = (currentIdx + 1) % slides.length;
-    slides[currentIdx].classList.add('active');
+    $slides.eq(currentIdx).removeClass('active');
+    currentIdx = (currentIdx + 1) % $slides.length;
+    $slides.eq(currentIdx).addClass('active');
   }, 3000);
 }
