@@ -1,6 +1,23 @@
-# AboutMe
+# _AboutMe_ <br> _Portfolio Project Refactoring_
 📌 CORP : KOSTA <br />
-📌 DURATION : 2026.03.14 ~ 
+📌 DURATION <br>
+<ul>
+    <li>proto type : 2026.03.14 ~ 2026.03.19</li>
+    <li>refactoring : 2026.03.28 ~ </li>
+</ul>
+
+<br>
+
+## 실행 방법
+이 프로젝트는 `fetch()`로 `sections/*.html`을 불러오기 때문에 `file://`로 직접 열지 말고 로컬 서버에서 실행해야 합니다.
+
+예시:
+
+```bash
+npx serve
+```
+
+또는 VS Code Live Server를 사용하세요.
 
 <br>
 

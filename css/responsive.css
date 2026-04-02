@@ -1,0 +1,24 @@
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hero-container {
+    padding: 45px 30px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .hero-visual {
+    margin-left: 30px;
+    margin-top: 20px;
+  }
+
+  .award-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .main-wrapper {
+    margin-top: 100px;
+  }
+}

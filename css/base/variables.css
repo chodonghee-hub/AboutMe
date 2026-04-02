@@ -1,0 +1,13 @@
+:root {
+  --bg: #0d1117;
+  --card: #161b22;
+  --border: #30363d;
+  --text-primary: #f0f6fc;
+  --text-secondary: #8b949e;
+  --blue: #58a6ff;
+  --purple: #bc8cff;
+
+  --max-w: 900px;
+  --min-w: 320px;
+  --nav-h: 70px;
+}

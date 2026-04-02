@@ -1,0 +1,41 @@
+.award-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 24px;
+}
+
+.award-card {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.award-content {
+  width: 100%;
+}
+
+.award-content--column {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+}
+
+.award-title-row {
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+
+.award-emoji {
+  font-size: 32px;
+  background: #21262d;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+}
