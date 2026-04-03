@@ -10,26 +10,19 @@ const TIER_NAMES = [
   'Ruby V',   'Ruby IV',   'Ruby III',   'Ruby II',   'Ruby I',
 ];
 
-const CORS_PROXIES = [
-  (url) => `https://corsproxy.io/?url=${encodeURIComponent(url)}`,
-  (url) => `https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`,
-  (url) => `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(url)}`,
-];
-
 export async function fetchBojUser(handle = BOJ_HANDLE) {
-  const target = `https://solved.ac/api/v3/user/show?handle=${encodeURIComponent(handle)}`;
-
-  for (const buildUrl of CORS_PROXIES) {
-    try {
-      const res = await fetch(buildUrl(target));
-      if (!res.ok) continue;
-      return await res.json();
-    } catch {
-      // 다음 프록시 시도
-    }
+  // 배포 환경(Vercel): 서버리스 함수로 서버 사이드 호출
+  if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
+    const res = await fetch(`/api/boj?handle=${encodeURIComponent(handle)}`);
+    if (!res.ok) throw new Error(`BOJ API 오류: ${res.status}`);
+    return res.json();
   }
 
-  throw new Error('모든 CORS 프록시 실패');
+  // 로컬 개발: CORS 프록시 사용
+  const target = `https://solved.ac/api/v3/user/show?handle=${encodeURIComponent(handle)}`;
+  const res = await fetch(`https://corsproxy.io/?url=${encodeURIComponent(target)}`);
+  if (!res.ok) throw new Error(`solved.ac API 오류: ${res.status}`);
+  return res.json();
 }
 
 export function getTierName(tier) {
