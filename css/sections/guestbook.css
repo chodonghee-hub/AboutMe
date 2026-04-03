@@ -1,0 +1,220 @@
+.gb-section {
+  margin-bottom: 80px;
+}
+
+.gb-header {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: var(--text-primary);
+}
+
+/* 입력 폼 카드 */
+.gb-form-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 32px;
+  margin-bottom: 24px;
+}
+
+.gb-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.gb-field label {
+  font-size: 13px;
+  color: var(--text-secondary);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.gb-field input,
+.gb-field textarea {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  color: var(--text-primary);
+  font-size: 15px;
+  padding: 12px 16px;
+  resize: vertical;
+  transition: border-color 0.2s ease;
+  font-family: inherit;
+}
+
+.gb-field input:focus,
+.gb-field textarea:focus {
+  outline: none;
+  border-color: var(--blue);
+}
+
+.gb-form-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#gb-submit {
+  background: linear-gradient(90deg, var(--blue), var(--purple));
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+  font-family: inherit;
+}
+
+#gb-submit:hover {
+  opacity: 0.85;
+}
+
+#gb-submit:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* 댓글 카드 */
+.gb-comment-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--blue);
+  border-radius: 12px;
+  padding: 20px 24px;
+  margin-bottom: 12px;
+  transition: border-left-color 0.2s ease;
+}
+
+.gb-comment-card:hover {
+  border-left-color: var(--purple);
+}
+
+.gb-comment-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.gb-comment-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--blue);
+}
+
+.gb-comment-date {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.gb-comment-message {
+  font-size: 15px;
+  color: var(--text-primary);
+  line-height: 1.6;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* Google 로그인 영역 */
+.gb-login-desc {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+}
+
+.gb-google-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #fff;
+  color: #3c4043;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease;
+  font-family: inherit;
+}
+
+.gb-google-btn img {
+  width: 18px;
+  height: 18px;
+}
+
+.gb-google-btn:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* 로그인 상태 유저 바 */
+.gb-user-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.gb-user-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid var(--border);
+}
+
+.gb-user-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+  flex: 1;
+}
+
+.gb-logout-btn {
+  background: transparent;
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 4px 12px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: color 0.2s ease, border-color 0.2s ease;
+  font-family: inherit;
+}
+
+.gb-logout-btn:hover {
+  color: var(--text-primary);
+  border-color: var(--text-primary);
+}
+
+/* 댓글 카드 작성자 영역 */
+.gb-comment-author {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.gb-comment-avatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.gb-comment-avatar-fallback {
+  font-size: 18px;
+}
+
+/* 상태 메시지 */
+.gb-loading,
+.gb-empty,
+.gb-error {
+  text-align: center;
+  padding: 40px;
+  color: var(--text-secondary);
+  font-size: 14px;
+}

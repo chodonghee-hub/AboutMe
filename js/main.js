@@ -2,6 +2,7 @@ import { loadIncludes } from './includes/include.js';
 import { PROJECT_LIST } from './data/projects-data.js';
 import { createProjectCard, startProjectCarousel } from './ui/project-card.js';
 import { fetchBojUser, getTierName, getTierImgUrl } from './api/solved-ac.js';
+import { initGuestbook } from './ui/guestbook.js';
 
 function renderProjects() {
   const $grid = $('#project-grid');
@@ -34,6 +35,7 @@ async function init() {
   await loadIncludes();
   renderProjects();
   updateBojData();
+  initGuestbook();
 }
 
 init();

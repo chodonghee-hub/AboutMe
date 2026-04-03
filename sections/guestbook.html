@@ -1,0 +1,42 @@
+<section id="guestbook" class="gb-section">
+  <h2 class="gb-header">Guestbook</h2>
+
+  <div class="gb-form-card">
+
+    <!-- 로그아웃 상태 -->
+    <div id="gb-logged-out">
+      <p class="gb-login-desc">Google 계정으로 로그인하면 방명록을 남길 수 있습니다.</p>
+      <button id="gb-google-login" class="gb-google-btn">
+        <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google" />
+        Google로 로그인
+      </button>
+    </div>
+
+    <!-- 로그인 상태 -->
+    <div id="gb-logged-in" style="display:none">
+      <div class="gb-user-bar">
+        <img id="gb-user-avatar" class="gb-user-avatar" src="" alt="" />
+        <span id="gb-user-name" class="gb-user-name"></span>
+        <button id="gb-logout" class="gb-logout-btn">로그아웃</button>
+      </div>
+      <form id="gb-form">
+        <div class="gb-field">
+          <label for="gb-message">메시지</label>
+          <textarea
+            id="gb-message"
+            placeholder="방명록을 남겨주세요 (최대 500자)"
+            maxlength="500"
+            rows="3"
+            required
+          ></textarea>
+        </div>
+        <div class="gb-form-footer">
+          <button id="gb-submit" type="submit">남기기 →</button>
+        </div>
+      </form>
+    </div>
+
+  </div>
+
+  <div id="gb-comment-list" class="gb-comment-list"></div>
+</section>
