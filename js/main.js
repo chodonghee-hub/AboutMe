@@ -27,6 +27,7 @@ async function updateBojData() {
     $('#algo-rank').text('#' + user.rank.toLocaleString());
   } catch (e) {
     console.warn('백준 데이터 로드 실패:', e.message);
+    $('#algo-tier, #algo-solved, #algo-rating, #algo-rank').text('N/A');
   }
 }
 
