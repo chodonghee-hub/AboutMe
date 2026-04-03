@@ -1,0 +1,2 @@
+기존 이미지 파일들을 이 폴더에 넣어주세요.
+예: logo.svg, pawong_logo.png, pawong.png 등

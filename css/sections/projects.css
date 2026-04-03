@@ -1,0 +1,51 @@
+.proj-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.proj-item {
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.proj-item:hover {
+  transform: translateY(-10px);
+  border-color: var(--blue);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+.proj-thumb {
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+}
+
+.slide-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.proj-thumb-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.proj-thumb-img.active {
+  opacity: 1;
+}
+
+.proj-details {
+  padding: 25px;
+}
+
+.proj-details h3 {
+  margin-bottom: 8px;
+  font-size: 20px;
+}

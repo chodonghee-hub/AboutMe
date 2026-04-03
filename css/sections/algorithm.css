@@ -1,0 +1,24 @@
+.algo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.algo-stat-card {
+  padding: 30px;
+}
+
+.algo-value {
+  font-size: 40px;
+  font-weight: 900;
+  color: var(--blue);
+  margin-top: 10px;
+  display: block;
+}
+
+.algo-label {
+  font-size: 14px;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
