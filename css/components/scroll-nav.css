@@ -1,0 +1,62 @@
+/* ── Nav active highlight ── */
+.nav ul li a.nav-active {
+  color: var(--ink);
+  font-weight: 600;
+  position: relative;
+}
+
+.nav ul li a.nav-active::after {
+  content: '';
+  position: absolute;
+  bottom: 6px;
+  left: 12px;
+  right: 12px;
+  height: 2px;
+  border-radius: 1px;
+  background: var(--blue);
+}
+
+/* ── Right-side dot navigator ── */
+.scroll-dot-nav {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.scroll-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.scroll-dot:hover {
+  background: rgba(0, 0, 0, 0.45);
+  transform: scale(1.3);
+}
+
+.scroll-dot.active {
+  background: var(--blue);
+  transform: scale(1.25);
+}
+
+/* dark section 위에서 dot 색상 반전 */
+.sec-dark ~ * .scroll-dot-nav .scroll-dot,
+body.in-dark-section .scroll-dot:not(.active) {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+@media (max-width: 768px) {
+  .scroll-dot-nav {
+    right: 10px;
+  }
+}

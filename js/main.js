@@ -2,6 +2,7 @@ import { loadIncludes } from './includes/include.js';
 import { PROJECT_LIST } from './data/projects-data.js';
 import { createProjectCard } from './ui/project-card.js';
 import { fetchBojUser, getTierName, getTierImgUrl } from './api/solved-ac.js';
+import { initScrollNav } from './ui/scroll-nav.js';
 
 const CAROUSEL_GAP = 20;
 const CLONE_COUNT = 4;
@@ -141,6 +142,7 @@ async function init() {
   await loadIncludes();
   renderProjects();
   updateBojData();
+  initScrollNav();
 }
 
 init();
