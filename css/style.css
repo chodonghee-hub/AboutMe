@@ -8,6 +8,7 @@
 @import url("./components/section-title.css");
 @import url("./components/card.css");
 @import url("./components/badge.css");
+@import url("./components/button.css");
 
 @import url("./sections/hero.css");
 @import url("./sections/about.css");
@@ -16,5 +17,6 @@
 @import url("./sections/algorithm.css");
 @import url("./sections/experience.css");
 @import url("./sections/achievements.css");
+@import url("./sections/footer.css");
 
 @import url("./responsive.css");

@@ -1,5 +1,36 @@
-.main-wrapper {
-  max-width: var(--max-w);
-  margin: calc(var(--nav-h) + 60px) auto 100px auto;
+.bleed {
+  width: 100%;
+}
+
+.container {
+  max-width: var(--max);
+  margin: 0 auto;
   padding: 0 24px;
+}
+
+.sec-dark {
+  background: var(--black);
+  color: var(--white);
+}
+
+.sec-fog {
+  background: var(--fog);
+  color: var(--ink);
+}
+
+.sec-white {
+  background: var(--white);
+  color: var(--ink);
+}
+
+.pad-lg {
+  padding: 110px 0;
+}
+
+.pad-md {
+  padding: 80px 0;
+}
+
+main {
+  padding-top: 44px;
 }

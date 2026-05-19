@@ -1,27 +1,60 @@
-.exp-card {
-  padding: 40px;
-}
-
 .exp-list {
   list-style: none;
-  padding-left: 25px;
+  padding: 0;
+  margin: 0;
 }
 
 .exp-item {
-  margin-bottom: 18px;
-  position: relative;
+  display: grid;
+  grid-template-columns: 200px 1fr auto;
+  gap: 32px;
+  align-items: start;
+  padding: 24px 0;
+  border-top: 1px solid var(--line-light);
+}
+
+.exp-item:last-child {
+  border-bottom: 1px solid var(--line-light);
+}
+
+.exp-when {
+  font-family: "SF Mono", "SFMono-Regular", ui-monospace, Menlo, Monaco, monospace;
+  font-size: 13px;
+  color: var(--ink-48);
+  padding-top: 2px;
+  white-space: nowrap;
+}
+
+.exp-what {
   font-size: 17px;
-  transition: color 0.3s ease;
+  line-height: 1.47;
+  color: var(--ink);
 }
 
-.exp-item::before {
-  content: "●";
-  color: var(--blue);
-  position: absolute;
-  left: -30px;
-  font-size: 14px;
+.exp-what .org {
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink-48);
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
 
-.exp-item:hover {
-  color: var(--blue);
+.exp-what .role {
+  font-size: 17px;
+  color: var(--ink);
+  font-weight: 400;
+}
+
+.exp-link a {
+  font-size: 13px;
+  color: var(--link);
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+  white-space: nowrap;
+}
+
+.exp-link a:hover {
+  opacity: 0.72;
 }

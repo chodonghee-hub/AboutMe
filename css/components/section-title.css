@@ -1,12 +1,36 @@
-.about-header,
-.proj-header,
-.tech-header,
-.algo-header,
-.exp-header,
-.award-header {
-  font-size: clamp(22px, 4vw, 28px);
-  margin-bottom: 30px;
-  border-left: 5px solid var(--blue);
-  padding-left: 20px;
-  font-weight: 800;
+.eyebrow {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-48);
+  margin-bottom: 12px;
+}
+
+.sec-dark .eyebrow {
+  color: rgba(255,255,255,0.48);
+}
+
+.h-section {
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.sub-section {
+  font-size: 21px;
+  line-height: 1.38;
+  color: var(--ink-80);
+  max-width: 640px;
+  margin-bottom: 48px;
+}
+
+.sec-dark .sub-section {
+  color: rgba(255,255,255,0.72);
+}
+
+.sec-dark .h-section {
+  color: var(--white);
 }

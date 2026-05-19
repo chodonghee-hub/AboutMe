@@ -1,0 +1,72 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border-radius: 980px;
+  font-size: 17px;
+  font-weight: 400;
+  padding: 12px 28px;
+  cursor: pointer;
+  transition: opacity 0.2s ease, background 0.2s ease;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: var(--blue);
+  color: var(--white);
+  border: none;
+}
+
+.btn-primary:hover {
+  opacity: 0.85;
+}
+
+.btn-ghost {
+  background: transparent;
+  border: 1px solid var(--ink);
+  color: var(--ink);
+}
+
+.btn-ghost:hover {
+  background: rgba(0,0,0,0.06);
+}
+
+.sec-dark .btn-ghost {
+  border-color: rgba(255,255,255,0.48);
+  color: var(--white);
+}
+
+.sec-dark .btn-ghost:hover {
+  background: rgba(255,255,255,0.10);
+}
+
+.btn-row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--link);
+  font-size: 17px;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.link::after {
+  content: " ›";
+}
+
+.link:hover {
+  opacity: 0.75;
+}
+
+.sec-dark .link {
+  color: var(--link-dark);
+}

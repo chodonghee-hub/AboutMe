@@ -1,40 +1,34 @@
-export function createProjectCard(project) {
-  const images = project.imgs || (project.img ? [project.img] : []);
-  const slidesHtml = images
-    .map(
-      (src, i) => `<img class="proj-thumb-img ${i === 0 ? 'active' : ''}" src="${src}" alt="${project.title} thumbnail" />`
-    )
-    .join('');
+export function createProjectCard(project, index, total) {
+  const imgs = project.imgs || [];
+  const hasImgs = imgs.length > 0;
 
-  const badges = (project.work || [])
-    .map((v) => `<div class="proj-badge">${v}</div>`)
-    .join('');
+  const headerContent = hasImgs
+    ? `<div class="proj-img-slider">${imgs.map((src, i) =>
+        `<img class="proj-slide-img${i === 0 ? ' active' : ''}" src="${src}" alt="${project.title}" />`
+      ).join('')}</div>`
+    : `<div class="proj-icon-wrap"><span class="proj-icon-text">${project.icon || project.title[0]}</span></div>`;
 
-  return $('<div>').addClass('proj-item').html(`
-    <div class="proj-thumb">
-      <div class="slide-wrapper">
-        ${slidesHtml}
+  const meta = [project.role, project.year, project.category].filter(Boolean).join(' · ');
+  const cardNum = `${String(index + 1).padStart(2, '0')} / ${String(total).padStart(2, '0')}`;
+  const link = project.link || '#';
+  const linkAttrs = link !== '#' ? ' target="_blank" rel="noopener"' : '';
+
+  const $card = $('<article>').addClass('proj-card');
+  $card.html(`
+    <div class="proj-color-header" style="background:${hasImgs ? '#fff' : (project.color || '#888')}">
+      ${headerContent}
+      <span class="proj-hex-badge">${project.color || ''}</span>
+    </div>
+    <div class="proj-body">
+      ${meta ? `<p class="proj-meta-row">${meta}</p>` : ''}
+      <h3 class="proj-title">${project.title}</h3>
+      <p class="proj-desc">${project.desc}</p>
+      <div class="proj-foot">
+        <a class="proj-learn-more" href="${link}"${linkAttrs}>Learn more ›</a>
+        <span class="proj-card-num">${cardNum}</span>
       </div>
     </div>
-    <div class="proj-details">
-      <h3>${project.title}</h3>
-      <p>${project.desc}</p>
-    </div>
-    <div class="proj-badge-list">
-      ${badges}
-    </div>
   `);
-}
 
-export function startProjectCarousel($item) {
-  const $slides = $item.find('.proj-thumb-img');
-  if ($slides.length <= 1) return;
-
-  let currentIdx = 0;
-
-  setInterval(() => {
-    $slides.eq(currentIdx).removeClass('active');
-    currentIdx = (currentIdx + 1) % $slides.length;
-    $slides.eq(currentIdx).addClass('active');
-  }, 3000);
+  return $card;
 }

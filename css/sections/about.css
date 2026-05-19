@@ -1,11 +1,16 @@
-.about-card {
-  padding: 35px;
-  font-size: 17px;
+.about-quote {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: var(--ink);
+  margin-bottom: 24px;
+  max-width: 800px;
 }
 
-.about-message {
-  color: var(--blue);
-  font-size: 22px;
-  font-weight: bold;
-  margin-bottom: 10px;
+.about-body {
+  font-size: 21px;
+  line-height: 1.52;
+  color: var(--ink-80);
+  max-width: 640px;
 }

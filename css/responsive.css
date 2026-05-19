@@ -1,24 +1,97 @@
 @media (max-width: 768px) {
-  .nav-links {
+  /* Nav */
+  .nav ul {
     display: none;
   }
 
-  .hero-container {
-    padding: 45px 30px;
-    text-align: center;
-    justify-content: center;
+  /* Hero */
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
   }
 
-  .hero-visual {
-    margin-left: 30px;
-    margin-top: 20px;
+  .hero-text h1 {
+    font-size: 52px;
   }
 
-  .award-grid {
+  .photo {
+    display: none;
+  }
+
+  /* Projects */
+  .proj-grid {
     grid-template-columns: 1fr;
   }
 
-  .main-wrapper {
-    margin-top: 100px;
+  .proj-card-wide {
+    grid-column: auto;
+  }
+
+  /* Tech Stack */
+  .tech-row {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* Algorithm */
+  .stat-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stat-cell:nth-child(3n) {
+    border-right: 1px solid rgba(255,255,255,0.08);
+  }
+
+  .stat-cell:nth-child(2n) {
+    border-right: none;
+  }
+
+  .stat-cell:nth-child(5),
+  .stat-cell:nth-child(6) {
+    border-bottom: none;
+  }
+
+  .stat-cell .v {
+    font-size: 36px;
+  }
+
+  /* Experience */
+  .exp-item {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .exp-link {
+    display: none;
+  }
+
+  /* Achievements */
+  .ach-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* About */
+  .about-quote {
+    font-size: 32px;
+  }
+
+  /* Section headings */
+  .h-section {
+    font-size: 34px;
+  }
+
+  /* Footer CTA */
+  .footer-cta h2 {
+    font-size: 36px;
+  }
+
+  .btn-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .legal .row {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
   }
 }
